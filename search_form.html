@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Blood Donors</title>
+</head>
+<body>
+    <h1>Search for Available Blood Donors</h1>
+    <form action="search_results.php" method="POST">
+        <!-- Blood Group -->
+        <label for="blood_group">Required Blood Group:</label>
+        <select name="blood_group" id="blood_group" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br><br>
+
+        <!-- City -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
